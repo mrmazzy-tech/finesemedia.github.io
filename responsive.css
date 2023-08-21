@@ -1,0 +1,91 @@
+/* Mobile Responsive for Header Starts from Here: */
+@media only screen and (max-width: 800px) {
+    header {
+      height: auto;
+    }
+  
+    header .container-content {
+      height: auto;
+      padding: 20px;
+    }
+  
+    header .brand h1 {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  
+    header nav {
+      display: none;
+    }
+  
+    header #icon {
+      display: block;
+    }
+  
+    header ul {
+      display: none;
+    }
+  
+    header .login {
+      margin: 0;
+    }
+  
+    header .home h1 {
+      font-size: 60px;
+      margin-top: 20px;
+    }
+  
+    header .home .item_box {
+      padding: 20px;
+    }
+  
+    header .home .item img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    /* About Us */
+    .about .left,
+    .about .right {
+      width: 100%;
+      padding: 0;
+    }
+  
+    /* TESTOMINALS */
+    .TESTOMINALS .owl-carousel {
+      flex-wrap: wrap;
+    }
+  
+    /* Blog */
+    .blog .box {
+      text-align: center;
+    }
+  
+    .blog .box img {
+      border-radius: 0;
+    }
+  }
+  
+  /* Tablet Responsive */
+  @media only screen and (max-width: 1200px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .grid1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    /* About Us */
+    .about .left,
+    .about .right {
+      width: 50%;
+      padding: 40px;
+    }
+  
+    /* TESTOMINALS */
+    .TESTOMINALS .owl-carousel {
+      flex-wrap: wrap;
+    }
+  }
+  

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Kashif studio LTD">
+    <meta name = "title" content = "Interior designer web">
+    <meta name = "description" content = "A best design ever by Kashif studio LTD">
+    <link rel="stylesheet" href="style1.css">  
+    <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="Favicon.svg" type="image/svg+xml">
+    <title>FINESE MEDIA - A digital Agency</title>
+</head>
+<body>
+    <header>
+      <div class="container-content">
+        <div class="container">
+          <div class="icon flex1">
+            <div class="box">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-youtube"></i>
+              <i class="fa fa-twitter"></i>
+            </div>
+            <div class="box">
+              <i class="fa fa-envelope">&nbsp;&nbsp; contact@finesemedia.com</i>
+              <i class="fa fa-phone">&nbsp;&nbsp; +92 3114833379  </i>
+            </div>
+          </div>
+          <hr>
+          <nav>
+          <div class="brand">
+            <h1>FINESE MEDIA</h1>
+          </div>
+            <ul id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Testominals</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="login"><a href="http://localhost/Practivr/login_form.php">SignUp / Login</a></button>
+            <!-- <i id="icon" class="fa fa-bars"> </i> -->
+          </nav>
+      
+          <div class="home">
+            <marquee behavior="slide", width="22%"> <h3>A DIGITAL AGENCY</h3> </marquee> 
+            <h1>DIGITILAIZED YOUR <br> BUSINESS </h1>
+          
+          <div class="item grid">
+            <div class="item_box flex">
+                <img src="./image/i1.png" alt="" width="80px"> 
+                     
+            <div class="text">
+              <a href="#">Web development </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati a repellat voluptate.</p>
+            </div>
+          </div>
+          <!-- 2nd Grid here -->
+          <div class="item_box flex">
+            <img src="./image/i2.png" alt="" width="80px">            
+            <div class="text">
+              <a href="#">Seo Servies </a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati a repellat voluptate.</p>
+            </div>
+          </div>
+          <!-- 3rd Grid here -->
+        <div class="item_box flex">
+          <img src="./image/i3.png" alt="" width="80px">            
+      <div class="text">
+        <a href="#">Consultant </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati a repellat voluptate.</p>
+      </div>
+    </div>    
+    </div>
+    </div>
+    </div>
+    </header>        <!-- Header closed here  -->
+
+<!-- Container / Grids of 1st Section Content -->
+<section class="design">
+<div class="container grid">
+    <div class="box flex">
+      <i class="fa fa-qrcode"></i>
+      <div class="text">
+        <h4>What's Good for your business</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quaerat veritatis deserunt.</p>
+      </div>
+    </div>
+    <!-- 2nd Section starts here :  -->
+    <div class="box flex">
+      <i class="fa fa-wpexplorer"></i>
+      <div class="text">
+        <h4>Grow Your business</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quaerat veritatis deserunt.</p>
+      </div>
+    </div>
+    <!-- 3rd Section starts here: -->
+    <div class="box flex">
+      <i class="fa fa-lightbulb-o"></i>
+      <div class="text">
+        <h4>Solution with creativity</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quaerat veritatis deserunt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section  -->
+<section class="about">
+  <div class="container flex1">
+    <div class="left">
+    <div class="img">
+      <img src="./image/p1.png" alt="">
+    </div>
+    </div>
+    <div class="right">
+      <h5>Why Choose us</h5>
+      <h2>Why us</h2>
+      <!-- 1st Question -->
+      <button class="accordion"><label>1. What services does your digital agency provide? </label></button>
+      <div class="pannel active">
+        <p>Our digital agency provides web design, SEO, social media marketing, PPC advertising, content marketing, email campaigns, and analytics.</p>
+      </div>
+      <!-- 2nd Question -->
+      <button class="accordion"><label>2.How do you customize solutions for our business?</label></button>
+      <div class="pannel active">
+        <p>We analyze your business, conduct market research, and create a tailored digital strategy to meet your specific goals.</p>
+      </div>
+      <!-- 3rd Question -->
+      <button class="accordion"><label>3. How do you measure campaign success?</label></button>
+      <div class="pannel active">
+        <p>We use data-driven metrics and provide transparent reporting, focusing on KPIs like traffic, conversions, and ROI to gauge performance.</p>
+      </div>
+
+      <!-- 4th Question -->
+      <button class="accordion"><label>4. How experienced is your team?</label></button>
+      <div class="pannel active">
+        <p>Our team comprises highly skilled experts with a wealth of experience in the digital marketing field.</p>
+      </div>
+      <!--Questions End here -->
+    </div>
+  </div>
+</section>
+
+<!-- Applying JS in All Questions Buttons (1, 2, 3) -->
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+<!-- TESTOMINALS -->
+<section class="TESTOMINALS" id="TESTOMINALS">
+  <div class="container">
+    <h5>HAPPY CLIENTS </h5>
+    <h2>Testimonials</h2>
+<!-- 1st person of testominal -->
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="box flex">
+          <div class="img">
+            <img src="image/t.jpg" alt=""><br>
+          </div>
+          <div class="text">
+            <h3>Cole Marena</h3>
+            <h5>SEO EXPERT</h5><br>
+          </div>
+        </div>
+        <p>As an SEO expert, I elevate websites with proven strategies for top search engine rankings.</p>
+      </div>
+      <!-- 2nd person of testominal -->
+      <div class="item">
+        <div class="box flex">
+          <div class="img">
+            <img src="image/t2.png" alt=""><br>
+          </div>
+          <div class="text">
+            <h3>Olivia Ava</h3>
+            <h5>WEB DEVELOPER</h5><br>
+          </div>
+        </div>
+        <p> Web developer crafting seamless experiences & stunning websites, leaving lasting impressions.</p>
+      </div>
+      <!-- Third person of Testominal -->
+      <div class="item">
+        <div class="box flex">
+          <div class="img">
+            <img src="image/t3.png" alt=""><br>
+          </div>
+          <div class="text">
+            <h3>Steven Robert</h3>
+            <h5>DIGIAL MARKETER</h5><br>
+          </div>
+        </div>
+        <p>Digital marketer driving brand success through strategic online connections.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog section starts from here -->
+<section class="blog">
+  <div class="container">
+    <h5>News and Update</h5>
+    <h2>Our Blog Post</h2>
+    <div class="content grid">
+      <!-- 1st blog -->
+      <div class="box">
+        <div class="img">
+          <img src="image/p3.png" alt="">
+          <div class="text">
+            <label>10, July 2023</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos nostrum autem!</p>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd blog post -->
+      <div class="box">
+        <div class="img">
+          <img src="image/p4.png" alt="">
+          <div class="text">
+            <label>12, July 2023</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos nostrum autem!</p>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd blog post -->
+      <div class="box">
+        <div class="img">
+          <img src="image/p5.png" alt="">
+          <div class="text">
+            <label>15, July 2023</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos nostrum autem!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Anchor Tag for view more posts  -->
+
+      <a href="#">View All posts</a>
+    </div>
+  </div>
+</section>
+<!-- Footer Starts here: -->
+<footer>
+  <div class="container">
+    <div class="content grid">
+      <div class="item ">
+        <h3>Navigation</h3>
+        
+        <div class="item_box flex1 ">
+          <ul>
+            <li>Home</li>
+            <li>Servies</li>
+            <li>News</li>
+            <li>Team</li>
+          </ul>
+          <ul>
+            <li>Abou Us</li>
+            <li>Privacy Policy</li>
+            <li>Contact</li>
+            <li>Membership</li>
+          </ul>
+        </div>
+      </div>
+<!-- recent news starts here -->
+      <div class="item">
+        <h3>Recent News</h3>
+        <div class="box flex">
+          <div class="img">
+            <img src="image/p3.png" alt="">
+          </div>
+          <div class="text">
+            <label>SEP 16, 2021</label>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+        <!-- 2nd recent news grid -->
+        <div class="box flex">
+          <div class="img">
+            <img src="image/p4.png" alt="">
+          </div>
+          <div class="text">
+            <label>SEP 16, 2021</label>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+        <!-- 3rd News grid -->
+        <div class="box flex">
+          <div class="img">
+            <img src="image/p5.png" alt="">
+          </div>
+          <div class="text">
+            <label>SEP 16, 2021</label>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+      </div>
+<!-- Subsctiber news letter starts here -->
+      <div class="item">
+        <h3>Subscribe Newsletter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
+        <input type="text" placeholder="Enter Email">
+        <label class="label">Send</label>
+        <div class="icon">
+          <h3>Follow Us</h3>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved | This template is made <i class="fa fa-heart"></i> with by <label>FINESE MEDIA</label> </p>
+  </div>
+</footer>
+</body>
+</html>
+
+
+

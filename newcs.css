@@ -1,0 +1,13 @@
+.image-container{
+    position: relative;
+    width:  150px;
+    height:     150px;
+}
+.image-container img{
+    width: 500%;
+    height: 500%;
+    -webkit-mask-image: url(shape.png);
+    mask-image: url(shape.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
